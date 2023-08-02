@@ -1,0 +1,214 @@
+/* * {
+    margin: 0;
+    padding: 0;
+
+
+
+
+/********HOME********/
+
+/*** Body ***/
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;     
+}
+.imgHome {
+    width: 5rem;
+}
+
+.logo {
+    border: 3px solid black;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/*** Header ***/
+header {
+    border-bottom: 0px solid black;
+    text-align: center;
+    padding: 20px 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #e8bfc6;
+    border-radius: 10px;
+}
+
+
+.fuentes {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+
+.fuentes li a:hover {
+    background-color:#f6c483;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    margin: 30px 0px;  
+}
+
+.imgCentral {
+    margin-right: 2%;
+    text-align: center;
+}
+
+.piePaginac {
+    text-align: center;
+    margin-top: 0px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+/*** Main ***/
+
+main {
+
+    background-color: #f1e4b7;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+
+}
+.carta .cartaContenido {
+    width: 160px;
+
+
+}
+/*** FOOTER ***/
+
+footer {
+ 
+    border-top: 1px solid black;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.uPie {
+    display: inline-block ;
+}
+
+/**********QUIENESSOMOS**********/
+
+.imgQs {
+    display: flex;
+}
+
+.loremQ {
+    text-align: justify;
+    
+}
+
+.imgApoyo {
+    text-align: left;
+}
+
+.imgApoyodo {
+    text-align: right;
+    border-bottom: 2px;
+}
+
+.imgQs {
+    width: 180px;
+    height: 130px;
+}
+
+
+/****************PRODUCTOS*************/
+
+
+.tituloPrincipal {
+    display: grid;
+    grid-template-columns: repeat (2,1fr);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #cd8484;
+    border-radius: 20px;
+}
+
+/*********TIENDAS************/
+
+iframe {
+    margin: auto;
+    border-radius: 20px;
+}
+
+.casaMatriz {
+    text-align: center;
+}
+
+
+/*************CONTACTO***********/
+
+
+.controlT{
+    margin-left: 15px;
+    text-align: left;
+}
+
+.control {
+    margin-left: 0px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.campos {
+    display: block;
+    width: 98%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Formulario {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+

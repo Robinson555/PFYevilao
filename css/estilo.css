@@ -193,7 +193,6 @@ main {
     text-align: center;
     justify-content: center;
 }
-
 .imagent1 img {
     border-radius: 30px;
 }
@@ -205,7 +204,7 @@ main {
 }
 
 /* Resolución para movil */
-@media (max-width:767px){
+@media (max-width:765px){
     .contenedor {
         grid-template-areas: 
             "texto1"
@@ -213,8 +212,7 @@ main {
             "texto2"
             "imagent2"
             "texto3"
-            "imagent3"
-        ;
+            "imagent3";
     }
 }
 /* Resolución para tablet */
@@ -223,8 +221,7 @@ main {
         grid-template-areas:
             "texto1 imagent1"
             "imagent2 texto2"
-            "texto3 imagent3"
-        ;
+            "texto3 imagent3";
     }
 }
 

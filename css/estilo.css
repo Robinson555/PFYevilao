@@ -143,7 +143,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     padding: 30px;
-    grid: wrap;
+    grid-auto-flow: row;
     grid-template-areas: 
     "texto1 imagent1"
     "imagent2 texto2"
@@ -152,7 +152,6 @@ main {
 
 .texto1 {
     grid-area: texto1;
-    grid: wrap;
     display: flex;
     text-align: -webkit-left;
     justify-content: center;
@@ -163,13 +162,11 @@ main {
     grid-area: imagent1;
     text-align: center;
     justify-content: center;
-    grid: wrap;
 }
 .texto2 {
     grid-area: texto2;
     text-align: center;
     justify-content: center;
-    grid: wrap;
     display: flex;
     text-align: -webkit-right;
     justify-content: center;
@@ -180,13 +177,11 @@ main {
     grid-area: imagent2;
     text-align: center;
     justify-content: center;
-    grid: wrap;
 }
 .texto3 {
     grid-area: texto3;
     text-align: center;
     justify-content: center;
-    grid: wrap;
     display: flex;
     text-align: -webkit-left;
     justify-content: center;
@@ -197,7 +192,6 @@ main {
     grid-area: imagent3;
     text-align: center;
     justify-content: center;
-    grid: wrap;
 }
 
 .imagent1 img {
@@ -214,21 +208,23 @@ main {
 @media (max-width:767px){
     .contenedor {
         grid-template-areas: 
-        "texto1"
-        "imagent1"
-        "texto2"
-        "imagent2"
-        "texto3"
-        "imagent3"
+            "texto1"
+            "imagent1"
+            "texto2"
+            "imagent2"
+            "texto3"
+            "imagent3"
+        ;
     }
 }
 /* Resolución para tablet */
-@media (max-width:768px){
+@media (max-width: 768px) and (max-width: 1023px){
     .contenedor {
         grid-template-areas:
             "texto1 imagent1"
             "imagent2 texto2"
             "texto3 imagent3"
+        ;
     }
 }
 

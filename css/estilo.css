@@ -1,43 +1,59 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
-
-
-
-
-/********HOME********/
+}
 
 /*** Body ***/
 body {
-    background-color: white;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;     
+    font-family: 'Signika Negative', sans-serif;
+    line-height: 1.6;
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
+
 .imgHome {
     width: 5rem;
+    padding: 8px;
 }
 
 .logo {
     border: 3px solid black;
     width: 200px;
+}
+
+.index {
+    row-gap: 10px 20px;
+    width: 350px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 /*** Header ***/
 header {
-    border-bottom: 0px solid black;
-    text-align: center;
-    padding: 20px 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    font-family: 'Signika Negative', sans-serif;
     background-color: #e8bfc6;
-    border-radius: 10px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 1px solid #da8190;
 }
 
-
 .fuentes {
-    font-size: 1.5rem;
+    font-family: 'Signika Negative', sans-serif;
     padding-left: 2rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
 }
 
@@ -48,8 +64,9 @@ header {
 }
 
 .tituloPrincipal {
+    font-family: 'Signika Negative', sans-serif;
     text-align: center;
-    margin: 30px 0px;  
+    margin: 20px 0px;
 }
 
 .imgCentral {
@@ -64,7 +81,7 @@ header {
 
 li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 li a {
@@ -76,80 +93,69 @@ li a {
 
 /*** Main ***/
 
-main {
-
-    background-color: #f1e4b7;
-    border-radius: 20px;
-    margin-top: 20px;
-    text-align: center;
-    padding: 20px 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(0.05);
 }
-
-.carta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-
-}
-.carta .cartaContenido {
-    width: 160px;
-
-
-}
-/*** FOOTER ***/
-
-footer {
- 
-    border-top: 1px solid black;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-}
-
-.uPie {
-    display: inline-block ;
-}
-
-/**********QUIENESSOMOS**********/
-
-.imgQs {
-    display: flex;
-}
-
-.loremQ {
-    text-align: justify;
-    
-}
-
-.imgApoyo {
-    text-align: left;
-}
-
-.imgApoyodo {
-    text-align: right;
-    border-bottom: 2px;
-}
-
-.imgQs {
-    width: 180px;
-    height: 130px;
-}
-
-
-/****************PRODUCTOS*************/
-
-
-.tituloPrincipal {
+.grid-Container {
     display: grid;
-    grid-template-columns: repeat (2,1fr);
-    text-transform: uppercase;
-    font-size: 3rem;
+    grid: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "pet pet" 
+    "productos tips";
+    padding: 10px;
+}
+.pet {
+    grid-area: pet;
+}
+.tips {
+    grid-area: tips;
+}
+.productos {
+    grid-area: productos;
+}
+.imgH {
+    border-radius: 20px;
+    width: 90%;
+    justify-content: center;
 }
 
+/* *************** */
+main {
+    background-color: #f1dfa0;
+    border-radius: 30px;
+    border: 1px #ebc643;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+/********** QUIENESSOMOS **********/
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+    width:100%;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+
+.imgQs{
+    display: flex;
+    width: 200px;
+    border-radius: 30px;
+    border: dashed 3px white;
+    flex-direction: row-reverse;
+    width: 250px;
+    height: 250px;
+}
+
+/**************** PRODUCTOS *************/
 .productos {
     display: flex;
     flex-direction: column;
@@ -159,56 +165,136 @@ footer {
     border-radius: 20px;
 }
 
-/*********TIENDAS************/
+.card-body {
+    box-shadow: 0px 5px 10px 0px rgb(243, 155, 40);
+}
+
+@media (min-width: 746px) {
+    .card {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 745px) {
+    .card {
+        flex-direction: column;
+        margin: 15px;
+    }
+}
+/********* TIENDAS ************/
 
 iframe {
     margin: auto;
     border-radius: 20px;
+    border-bottom: 20px solid black;
 }
 
 .casaMatriz {
     text-align: center;
 }
 
+/************* CONTACTO ***********/
+@media (min-width: 745px) {
+    .formulario{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gridContacto";
+    }
+}
 
-/*************CONTACTO***********/
 
+.formulario {
+    display: grid;
+    /* grid-auto-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(350px));
+    /* grid-template-rows: 1fr; */
+    grid: wrap;
+    grid-auto-flow: row;
+    gap: 10px;
+    padding: 20px 20px;
+    grid-template-areas: 
+    "nada gridContacto imagenContacto";
+}
 
-.controlT{
-    margin-left: 15px;
+.gridContacto{
+    justify-content: end;
+    grid-area: gridContacto;
+    grid-auto-flow: row;
+    grid: wrap;
     text-align: left;
+    border-width: #f1dfa0;
+    border-radius: 30px;
+    border: solid 3px gray;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(133, 82, 93, 0.5);
+    background-color: rgba(161, 131, 85, 0.7);
+    font-family: 'Signika Negative', sans-serif;
+    height: 100%;
 }
 
 .control {
-    margin-left: 0px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+    justify-content: center;
+    text-align: start;
+    padding: 0 20px;
 }
 
 .campos {
-    display: block;
-    width: 98%;
-    border: 2px solid #ccc;
+    display:inline-block;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
-.Formulario {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-top: 10px;
-    cursor: pointer;
+.imagenContacto {
+    grid-area: imagenContacto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 30%;
 }
 
+.imagenGrid {
+    border-radius: 30px;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
 
+.controlT {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.btnFormulario {
+    display:  inline-flex;
+    padding: 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(240, 220, 222, 0.5);
+
+
+
+}
+
+/*** FOOTER ***/
+footer {
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.uPie {
+    display: inline-block ;
+}

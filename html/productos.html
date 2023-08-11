@@ -1,292 +1,295 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Friend Shop</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-</head>
-<!-- Imagen de Fondo -->
-<body style="background-image: url(../img/imagen_background.avif); background-size: cover; background-repeat: no-repeat;">
-    <header>
-            <img class="logo" src="../img/Logo.png" alt="Logo de Tienda">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pet Friend Shop</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/estilo.css" />
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="../img/Logo_nav.png" type="image/x-icon" alt="Imagen Favicon" />
+        <!-- Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <!-- Imagen de Fondo -->
+    <body style="background-image: url(../img/imagen_background.avif)">
+        <header>
+             <!-- nav boostrap -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="../index.html"><img class="imgHome" src="../img/home.png" alt="Logonav"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto fuentes">
-                      <li class="nav-item">
-                        <a class="nav-link" href="quienessomos.html"> ¿Quienes Somos? </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="productos.html"> Productos </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="tiendas.html"> Tiendas </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"> Contacto </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand" href="../index.html"><img class="imgHome" src="../img/Logo_nav.png" alt="Logonav" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto fuentes">
+                            <li class="nav-item">
+                                <a class="nav-link" href="quienessomos.html"> ¿Quienes Somos? </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html"> Productos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tiendas.html"> Tiendas </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html"> Contacto </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
-    </header>    
-<main>
-  <div id="productos" class="tituloProductos mt-1">
-    <h2>Productos</h2>
-  </div>
+            </nav>
+        </header>
+        <main>
+            <div id="productos" class="tituloProductos mt-1">
+                <h2>Productos</h2>
+            </div>
 
-    <div class="row">
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_1.jpg" class="card-img-top" alt="prodg_1">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota</p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_2.jpg" class="card-img-top" alt="prodg_2">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota</p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_3.jpg" class="card-img-top" alt="prodg_3">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_4.jpg" class="card-img-top" alt="prodg_4">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_5.jpg" class="card-img-top" alt="prodg_5">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_6.jpg" class="card-img-top" alt="prodg_6">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_7.jpg" class="card-img-top" alt="prodg_7">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_8.jpg" class="card-img-top" alt="prodg_8">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota  </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_10.jpg" class="card-img-top" alt="prodg_10">
-            <div class="card-body">
-                <h3 class="card-title"> Comidada de Gato</h3>
-                <p class="card-text">  Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_11.jpg" class="card-img-top" alt="prodg_11">
-            <div class="card-body">
-                <h3 class="card-title"> Comida de Gato</h3>
-                <p class="card-text"> Alimento balanceado para tu mascota   </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodg_12.jpg" class="card-img-top" alt="prodg_12">
-            <div class="card-body">
-                <h3 class="card-title"> ProPlus alimento </h3>
-                <p class="card-text"> Alimento balanceado para tu mascota </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-<!-- Aqui comienzan los productos de Perros -->
+            <div class="row">
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_1.jpg" class="card-img-top" alt="prodg_1" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_2.jpg" class="card-img-top" alt="prodg_2" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_3.jpg" class="card-img-top" alt="prodg_3" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_4.jpg" class="card-img-top" alt="prodg_4" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_5.jpg" class="card-img-top" alt="prodg_5" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_6.jpg" class="card-img-top" alt="prodg_6" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_7.jpg" class="card-img-top" alt="prodg_7" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_8.jpg" class="card-img-top" alt="prodg_8" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_10.jpg" class="card-img-top" alt="prodg_10" />
+                            <h3 class="card-title">Comidada de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_11.jpg" class="card-img-top" alt="prodg_11" />
+                            <h3 class="card-title">Comida de Gato</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodg_12.jpg" class="card-img-top" alt="prodg_12" />
+                            <h3 class="card-title">ProPlus alimento</h3>
+                            <p class="card-text">Alimento balanceado para tu mascota</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Aqui comienzan los productos de Perros -->
 
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_1.jpg" class="card-img-top" alt="prodp_1">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_1.jpg" class="card-img-top" alt="prodp_1" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_2.jpg" class="card-img-top" alt="prodp_2" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_3.jpg" class="card-img-top" alt="prodp_3" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_4.jpg" class="card-img-top" alt="prodp_4" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_5.jpg" class="card-img-top" alt="prodp_5" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_6.jpg" class="card-img-top" alt="prodp_6" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_7.jpg" class="card-img-top" alt="prodp_7" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_8.jpg" class="card-img-top" alt="prodp_8" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_10.jpg" class="card-img-top" alt="prodp_10" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_11.jpg" class="card-img-top" alt="prodp_11" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_12.jpg" class="card-img-top" alt="prodp_12" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xl-3 col-md-6 col-sm-12" style="margin: 1rem 0rem">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="../img/prodp_13.jpg" class="card-img-top" alt="prodp_13" />
+                            <h3 class="card-title">Alimento para Perros</h3>
+                            <p class="card-text">Alimento balanceado sin aditivos</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_2.jpg" class="card-img-top" alt="prodp_2">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_3.jpg" class="card-img-top" alt="prodp_3">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_4.jpg" class="card-img-top" alt="prodp_4">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_5.jpg" class="card-img-top" alt="prodp_5">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_6.jpg" class="card-img-top" alt="prodp_6">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_7.jpg" class="card-img-top" alt="prodp_7">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_8.jpg" class="card-img-top" alt="prodp_8">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>      
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_10.jpg" class="card-img-top" alt="prodp_10">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_11.jpg" class="card-img-top" alt="prodp_11">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos</p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_12.jpg" class="card-img-top" alt="prodp_12">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <div class="card text-center">
-            <img src="../img/prodp_13.jpg" class="card-img-top" alt="prodp_13">
-            <div class="card-body">
-                <h3 class="card-title"> Alimento para Perros </h3>
-                <p class="card-text"> Alimento balanceado sin aditivos </p>
-                <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-        </div>
-      </div>      
-    </div>  
-  </main>
-  <footer>
-    <h4>Pet friend shop - Todos los derechos reservados - Robinson Yevilao</h4>            
-      <span class="uPie"><a href="https://www.instagram.com/"> Instagram </a></span>
-      <span><a href="https://www.facebook.com/"> Facebook </a></span>            
-  </footer>
-    <!-- JS BS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
+        </main>
+        <footer class="footer">
+            <h4>Pet friend shop - Todos los derechos reservados - Robinson Yevilao</h4>
+            <span class="uPie"><a href="https://www.instagram.com/"> Instagram </a></span>
+            <span><a href="https://www.facebook.com/"> Facebook </a></span>
+        </footer>
+        <!-- JS BS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
 </html>

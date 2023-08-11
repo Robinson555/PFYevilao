@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*** Body ***/
@@ -168,7 +169,7 @@ main {
     text-align: center;
     justify-content: center;
     display: flex;
-    text-align: -webkit-right;
+    text-align: -webkit-left;
     justify-content: center;
     padding: 10px;
     margin-top: 30px;
@@ -183,7 +184,7 @@ main {
     text-align: center;
     justify-content: center;
     display: flex;
-    text-align: -webkit-left;
+    text-align: -webkit-right;
     justify-content: center;
     padding: 10px;
     margin-top: 30px;
@@ -202,38 +203,41 @@ main {
 .imagent3 img {
     border-radius: 30px;
 }
+.texto1 p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.texto2 p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.texto3 p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+}
 
 /* Resolución para movil */
-@media (max-width:765px){
-    .contenedor {
+@media only screen and (max-width:765px){
+    .contenedor{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,auto);
         grid-template-areas: 
-            "texto1"
-            "imagent1"
-            "texto2"
-            "imagent2"
-            "texto3"
-            "imagent3";
-    }
-}
-/* Resolución para tablet */
-@media (max-width: 768px) and (max-width: 1023px){
-    .contenedor {
-        grid-template-areas:
-            "texto1 imagent1"
-            "imagent2 texto2"
-            "texto3 imagent3";
+        "texto1"
+        "imagent1"
+        "texto2"
+        "imagent2"
+        "texto3"
+        "imagent3";
     }
 }
 
-/* .imgQs{
-    display: flex;
-    width: 200px;
-    border-radius: 30px;
-    border: dashed 3px white;
-    flex-direction: row-reverse;
-    width: 250px;
-    height: 250px;
-} */
 
 /**************** PRODUCTOS *************/
 .productos {

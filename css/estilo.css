@@ -301,16 +301,6 @@ iframe {
 }
 
 /************* CONTACTO ***********/
-@media (min-width: 745px) {
-    .formulario{
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gridContacto";
-    }
-}
-
 
 .formulario {
     display: grid;

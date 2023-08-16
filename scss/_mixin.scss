@@ -35,9 +35,24 @@
 header {
     @include header-mixin;
 }
+/*Estilo main texto p e imagenes*/
+@mixin custom-styles {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+
+    img {
+        border-radius: 30px;
+    }
+}
+.imagent1, .imagent2, .imagent3 {
+    @include custom-styles;
+}
+.texto1, .texto2, .texto3 {
+    @include custom-styles;
+}
 
 /*Mixin para footer*/
-
 @mixin footer{
     background-color: rgba(255,255,255,0.7);
     margin-top: 20px;

@@ -6,12 +6,6 @@ main {
     padding: 5px;
     text-align: center;
     
-
-    .tituloPrincipal {
-        font-family: 'Signika Negative', sans-serif;
-        text-align: center;
-        margin: 20px 0px;
-    }
     
     .grid-Container {
         display: flex;
@@ -20,6 +14,50 @@ main {
         align-items: center;
         margin: 1.5rem;
         gap: 15px;
+        .welcome-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .text-container {
+            text-align: center;
+            font-size: 10rem;
+            font-family: 'Pacifico', cursive;
+
+        }
+        
+        .tituloPrincipal {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 4rem;
+            font-family: 'Pacifico', cursive;
+        }
+        
+        h2 {
+            font-size: 1.8rem; 
+        }
+        
+        @media (max-width: 768px) {
+            .tituloPrincipal {
+                font-size: 2rem;
+            }
+        
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tituloPrincipal {
+                font-size: 1.8rem;
+            }
+        
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
     }
     
     .pet, .producto, .tips {
@@ -30,7 +68,6 @@ main {
         margin-bottom: 15px;
         max-width: 10%;
     }
-    
     .image-container {
         position: relative;
         text-align: center;
@@ -43,13 +80,11 @@ main {
         align-items: center;
         justify-content: center;
     }
-    
     .pet:hover .image-container,
     .producto:hover .image-container,
     .tips:hover .image-container {
         transform: scale(0.98);
     }
-    
     .overlay {
         position: absolute;
         top: 0;
@@ -66,7 +101,6 @@ main {
         transform: scale(0.96);
         border-radius: 4rem;
     }
-    
     .overlay-content {
         font-family: 'Pacifico', cursive;
         font-size: 8rem;
@@ -75,14 +109,11 @@ main {
         border-radius: 5px;
         text-align: center;
     }
-    
     .pet:hover .overlay,
     .producto:hover .overlay,
     .tips:hover .overlay {
         opacity: 1;
     }
-    
-    /**/
         .pet {
             grid-area: pet;
             .pet p {
@@ -116,7 +147,7 @@ main {
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
+        grid-gap: 2rem;
         padding: 30px;
         grid-auto-flow: row;
         grid-template-areas: 
@@ -126,10 +157,14 @@ main {
         .texto1 {
             grid-area: texto1;
             display: flex;
+            flex-direction: column;
             text-align: -webkit-left;
             justify-content: center;
             padding: 10px;
             margin-top: 30px;
+            h4{
+                font-size: 2rem ;
+            }
         }
         .imagent1 .img {
             grid-area: imagent1;
@@ -141,10 +176,14 @@ main {
             text-align: center;
             justify-content: center;
             display: flex;
+            flex-direction: column;
             text-align: -webkit-left;
             justify-content: center;
             padding: 10px;
             margin-top: 30px;
+            h4{
+                font-size: 2rem ;
+            }
         }
         .imagent2 {
             grid-area: imagent2;
@@ -156,42 +195,21 @@ main {
             text-align: center;
             justify-content: center;
             display: flex;
+            flex-direction: column;
             text-align: -webkit-right;
             justify-content: center;
             padding: 10px;
             margin-top: 30px;
+            h4{
+                font-size: 2rem ;
+            }
         }
         .imagent3 {
             grid-area: imagent3;
             text-align: center;
             justify-content: center;
         }
-        .imagent1 img {
-            border-radius: 30px;
-        }
-        .imagent2 img {
-            border-radius: 30px;
-        }
-        .imagent3 img {
-            border-radius: 30px;
-        }
-        .texto1 p {
-            font-family: 'Signika Negative', sans-serif;
-            font-size: 1.3rem;
-            text-align: justify;
-        }
-        .texto2 p {
-            font-family: 'Signika Negative', sans-serif;
-            font-size: 1.3rem;
-            text-align: justify;
-        }
-        .texto3 p {
-            font-family: 'Signika Negative', sans-serif;
-            font-size: 1.3rem;
-            text-align: justify;
-        }
     }
-
     /* Seccion Main Contacto */
     
     @media only screen and (max-width:765px){
@@ -277,12 +295,41 @@ main {
         }
     }
     /* Seccion Main de Tiendas*/
-    .casaMatriz {
-        text-align: center;
+    .tienda-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem;
     }
-    iframe {
-        margin: auto;
-        border-radius: 20px;
-        border-bottom: 20px solid black;
+    
+    .texto-container {
+        flex: 1;
+    }
+    
+    .map-container {
+        flex: 1;
+        margin-left: 2rem;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10rem;
+        }
+    }
+    
+    @media (max-width: 815px) {
+        .tienda-container {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        iframe {
+            margin-left: 0;
+            margin-top: 1rem;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            border-radius: 1.5rem;
+        }
     }
 }

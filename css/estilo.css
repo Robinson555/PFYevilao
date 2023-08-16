@@ -71,6 +71,25 @@ header li a {
   color: black;
 }
 
+/*Estilo main texto p e imagenes*/
+.imagent1, .imagent2, .imagent3 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.imagent1 img, .imagent2 img, .imagent3 img {
+  border-radius: 30px;
+}
+
+.texto1, .texto2, .texto3 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.texto1 img, .texto2 img, .texto3 img {
+  border-radius: 30px;
+}
+
 /*Mixin para footer*/
 footer {
   background-color: rgba(255, 255, 255, 0.7);
@@ -91,16 +110,10 @@ main {
   margin-top: 20px;
   padding: 5px;
   text-align: center;
-  /**/
   /* Seccion Main Quienes Somos*/
   /* Seccion Main Contacto */
   /* Seccion Main productos */
   /* Seccion Main de Tiendas*/
-}
-main .tituloPrincipal {
-  font-family: "Signika Negative", sans-serif;
-  text-align: center;
-  margin: 20px 0px;
 }
 main .grid-Container {
   display: flex;
@@ -109,6 +122,42 @@ main .grid-Container {
   align-items: center;
   margin: 1.5rem;
   gap: 15px;
+}
+main .grid-Container .welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .grid-Container .text-container {
+  text-align: center;
+  font-size: 10rem;
+  font-family: "Pacifico", cursive;
+}
+main .grid-Container .tituloPrincipal {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-family: "Pacifico", cursive;
+}
+main .grid-Container h2 {
+  font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  main .grid-Container .tituloPrincipal {
+    font-size: 2rem;
+  }
+  main .grid-Container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  main .grid-Container .tituloPrincipal {
+    font-size: 1.8rem;
+  }
+  main .grid-Container h2 {
+    font-size: 1.2rem;
+  }
 }
 main .pet, main .producto, main .tips {
   flex: 1;
@@ -194,7 +243,7 @@ main .contenedor {
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  grid-gap: 2rem;
   padding: 30px;
   grid-auto-flow: row;
   grid-template-areas: "texto1 imagent1" "imagent2 texto2" "texto3 imagent3";
@@ -202,10 +251,14 @@ main .contenedor {
 main .contenedor .texto1 {
   grid-area: texto1;
   display: flex;
+  flex-direction: column;
   text-align: -webkit-left;
   justify-content: center;
   padding: 10px;
   margin-top: 30px;
+}
+main .contenedor .texto1 h4 {
+  font-size: 2rem;
 }
 main .contenedor .imagent1 .img {
   grid-area: imagent1;
@@ -217,10 +270,14 @@ main .contenedor .texto2 {
   text-align: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   text-align: -webkit-left;
   justify-content: center;
   padding: 10px;
   margin-top: 30px;
+}
+main .contenedor .texto2 h4 {
+  font-size: 2rem;
 }
 main .contenedor .imagent2 {
   grid-area: imagent2;
@@ -232,39 +289,19 @@ main .contenedor .texto3 {
   text-align: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   text-align: -webkit-right;
   justify-content: center;
   padding: 10px;
   margin-top: 30px;
 }
+main .contenedor .texto3 h4 {
+  font-size: 2rem;
+}
 main .contenedor .imagent3 {
   grid-area: imagent3;
   text-align: center;
   justify-content: center;
-}
-main .contenedor .imagent1 img {
-  border-radius: 30px;
-}
-main .contenedor .imagent2 img {
-  border-radius: 30px;
-}
-main .contenedor .imagent3 img {
-  border-radius: 30px;
-}
-main .contenedor .texto1 p {
-  font-family: "Signika Negative", sans-serif;
-  font-size: 1.3rem;
-  text-align: justify;
-}
-main .contenedor .texto2 p {
-  font-family: "Signika Negative", sans-serif;
-  font-size: 1.3rem;
-  text-align: justify;
-}
-main .contenedor .texto3 p {
-  font-family: "Signika Negative", sans-serif;
-  font-size: 1.3rem;
-  text-align: justify;
 }
 @media only screen and (max-width: 765px) {
   main .contenedor {
@@ -340,13 +377,38 @@ main .productos .card-body {
     margin: 15px;
   }
 }
-main .casaMatriz {
-  text-align: center;
+main .tienda-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
 }
-main iframe {
-  margin: auto;
-  border-radius: 20px;
-  border-bottom: 20px solid black;
+main .texto-container {
+  flex: 1;
+}
+main .map-container {
+  flex: 1;
+  margin-left: 2rem;
+}
+main .map-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+}
+@media (max-width: 815px) {
+  main .tienda-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  main iframe {
+    margin-left: 0;
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

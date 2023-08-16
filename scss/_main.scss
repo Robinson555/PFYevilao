@@ -6,7 +6,7 @@ main {
     padding: 5px;
     text-align: center;
     font-family: 'Signika Negative', sans-serif;
-    
+
     .tituloPrincipal {
         text-align: center;
         margin: 20px 0px;
@@ -77,8 +77,24 @@ main {
         font-size: 2rem;
     }
 
-    /* Seccion Main Quienes Somos*/
-
+    /* Seccion Main Quienes Somos*/    
+    /* Resolución para movil */
+    @media only screen and (max-width:765px){
+    .contenedor{
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "texto1"
+        "imagent1"
+        "texto2"
+        "imagent2"
+        "texto3"
+        "imagent3";
+    }
     .contenedor {
         display: grid;
         grid-auto-columns: 1fr;
@@ -161,6 +177,9 @@ main {
             text-align: justify;
         }
     }
+
+}
+
     
     /* Main Contacto */
     .formulario {

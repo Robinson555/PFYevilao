@@ -1,4 +1,4 @@
-main {
+.main {
     background-color: #f1dfa0;
     border-radius: 30px;
     border: 1px #ebc643;
@@ -94,8 +94,9 @@ main {
         "imagent2"
         "texto3"
         "imagent3";
+        }
     }
-    
+
     .contenedor {
         display: grid;
         grid-auto-columns: 1fr;

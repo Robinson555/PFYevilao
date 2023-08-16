@@ -5,31 +5,26 @@ main {
     margin-top: 20px;
     padding: 5px;
     text-align: center;
-
-
-
+    font-family: 'Signika Negative', sans-serif;
+    
     .tituloPrincipal {
-        font-family: 'Signika Negative', sans-serif;
         text-align: center;
         margin: 20px 0px;
-
-
     }
+
         /* MAIN INDEX */
     .imgindex {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        border-radius: 1rem;
-    
+        border-radius: 1rem;    
     }
 
     .grid-item:hover {
         filter: opacity(0.9);
         transform: scale(0.05);
     }
-    
 
     .grid-Container {
         display: grid;
@@ -202,8 +197,7 @@ main {
                     border-radius: 5px;
                     font-size: 15px;
                     margin-bottom: 10px;
-                }
-                
+                }                
             }
             
             .btnFormulario {
@@ -254,9 +248,6 @@ main {
         border-radius: 20px;
         border-bottom: 20px solid black;
     }
-    
-    
-    
 }
 
     

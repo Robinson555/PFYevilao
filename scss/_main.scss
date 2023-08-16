@@ -95,6 +95,7 @@ main {
         "texto3"
         "imagent3";
     }
+    
     .contenedor {
         display: grid;
         grid-auto-columns: 1fr;
@@ -177,9 +178,6 @@ main {
             text-align: justify;
         }
     }
-
-}
-
     
     /* Main Contacto */
     .formulario {
@@ -262,7 +260,7 @@ main {
     .casaMatriz {
         text-align: center;
     }
-    iframe {
+    .iframe {
         margin: auto;
         border-radius: 20px;
         border-bottom: 20px solid black;

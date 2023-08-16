@@ -1,5 +1,7 @@
+/*Estilos importados para que funcione el compilado sass*/
+
 @import "general";
-@import "body";
-@import "header";
-@import "main";
 @import "variables";
+@import "body";
+@import "mixin";
+@import "main";

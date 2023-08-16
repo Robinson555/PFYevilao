@@ -1,5 +1,5 @@
 main {
-    background-color: #f1dfa0;
+    background-color:$color-backgroundmain;
     border-radius: 30px;
     border: 1px #ebc643;
     margin-top: 20px;
@@ -28,7 +28,7 @@ main {
         position: relative;
         overflow: hidden;
         margin-bottom: 15px;
-        max-width: 10%; /* Reducción del tamaño de las imágenes */
+        max-width: 10%;
     }
     
     .image-container {
@@ -56,7 +56,7 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        color: #2cbbc3;
+        color:$color-home;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -192,7 +192,7 @@ main {
         }
     }
 
-    /* Main Contacto */
+    /* Seccion Main Contacto */
     
     @media only screen and (max-width:765px){
         .contenedor{
@@ -252,7 +252,7 @@ main {
             }
         }
     }
-    /* Seccion de productos en el Main*/
+    /* Seccion Main productos */
     .productos {
         display: flex;
         flex-direction: column;
@@ -276,7 +276,7 @@ main {
             margin: 15px;
         }
     }
-    /*MAIN TIENDAS*/
+    /* Seccion Main de Tiendas*/
     .casaMatriz {
         text-align: center;
     }

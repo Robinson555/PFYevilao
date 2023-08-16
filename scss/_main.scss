@@ -1,31 +1,27 @@
-.main {
+main {
     background-color: #f1dfa0;
     border-radius: 30px;
     border: 1px #ebc643;
     margin-top: 20px;
     padding: 5px;
     text-align: center;
-    font-family: 'Signika Negative', sans-serif;
-
     .tituloPrincipal {
+        font-family: 'Signika Negative', sans-serif;
         text-align: center;
         margin: 20px 0px;
     }
-
         /* MAIN INDEX */
     .imgindex {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        border-radius: 1rem;    
+        border-radius: 1rem;
     }
-
     .grid-item:hover {
         filter: opacity(0.9);
         transform: scale(0.05);
     }
-
     .grid-Container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -35,10 +31,8 @@
         grid-template-areas: 
         "pet pet" 
         "producto tips";
-        
         .pet {
             grid-area: pet;
-
             .pet p {
                 position: absolute;
                 top:50;
@@ -50,10 +44,8 @@
                 border-radius: 5px;
             }
         }
-
         .producto {
             grid-area: producto;
-
             .imgindex1 {
                 display: block;
                 flex-wrap: wrap;
@@ -65,38 +57,16 @@
                 box-shadow: 7px 7px 13px #89501a;
             }
         }
-        
         .tips {
             grid-area: tips;
         }
     }
-        
     .piePaginac {
         font-family: 'Pacifico', cursive;
         text-align: center;
         font-size: 2rem;
     }
-
-    /* Seccion Main Quienes Somos*/    
-    /* Resolución para movil */
-    @media only screen and (max-width:765px){
-    .contenedor{
-        height: auto;
-        margin: auto;
-        display: grid;
-        grid-gap: 0.5rem;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6,auto);
-        grid-template-areas: 
-        "texto1"
-        "imagent1"
-        "texto2"
-        "imagent2"
-        "texto3"
-        "imagent3";
-        }
-    }
-
+    /* Seccion Main Quienes Somos*/
     .contenedor {
         display: grid;
         grid-auto-columns: 1fr;
@@ -110,7 +80,6 @@
         "texto1 imagent1"
         "imagent2 texto2"
         "texto3 imagent3";
-
         .texto1 {
             grid-area: texto1;
             display: flex;
@@ -179,7 +148,6 @@
             text-align: justify;
         }
     }
-    
     /* Main Contacto */
     .formulario {
         display: grid;
@@ -190,7 +158,6 @@
         padding: 20px 20px;
         grid-template-areas: 
         "gridContacto";
-
         .gridContacto{
             justify-content: center;
             text-align: center;
@@ -203,21 +170,18 @@
             background-color: rgba(161, 131, 85, 0.7);
             font-family: 'Signika Negative', sans-serif;
             grid-area: gridContacto;
-        
             .control {
                 justify-content: center;
                 text-align: start;
                 padding: 0 20px;
-            
                 .campos {
                     width: 100%;
                     border: 1px solid #ccc;
                     border-radius: 5px;
                     font-size: 15px;
                     margin-bottom: 10px;
-                }                
+                }
             }
-            
             .btnFormulario {
                 display:  inline-flex;
                 padding: 0px 20px;
@@ -226,9 +190,7 @@
             }
         }
     }
-
     /* Seccion de productos en el Main*/
-
     .productos {
         display: flex;
         flex-direction: column;
@@ -236,18 +198,15 @@
         padding: 10px;
         background-color: #cd8484;
         border-radius: 20px;
-
         .card-body {
             box-shadow: 0px 5px 10px 0px rgb(243, 155, 40);
         }
-        
         @media (min-width: 746px) {
             .card {
                 flex-direction: column;
                 margin: 10px;
             }
         }
-        
         @media (max-width: 745px) {
             .card {
                 flex-direction: column;
@@ -255,13 +214,11 @@
             }
         }
     }
-
     /*MAIN TIENDAS*/
-    
     .casaMatriz {
         text-align: center;
     }
-    .iframe {
+    iframe {
         margin: auto;
         border-radius: 20px;
         border-bottom: 20px solid black;

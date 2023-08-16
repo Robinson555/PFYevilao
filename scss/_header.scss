@@ -4,31 +4,26 @@ header {
 	border-radius: 30px ;
 	margin-top: 20px;
 	border: 1px solid #da8190;
-
     .fuentes {
         font-family: 'Signika Negative', sans-serif;
         padding-left: 2rem;
         font-size: 1.3rem;
         text-transform: uppercase;
     }
-    
     .fuentes li a:hover {
         background-color:#f6c483;
         color: #fff;
         border-radius: 20px;
     }
-    
     .piePaginac {
         font-family: 'Pacifico', cursive;
         text-align: center;
         font-size: 2rem;
     }
-    
     li {
         display: inline-block;
         margin: 0 20px;
     }
-    
     li a {
         text-decoration: none;
         text-transform: uppercase;

@@ -1,25 +1,24 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: "Signika Negative", sans-serif;
   line-height: 1.6;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.body .imgHome {
+body .imgHome {
   width: 5rem;
   padding: 8px;
 }
-.body .logo {
+body .logo {
   border: 3px solid black;
   width: 200px;
 }
-.body .index {
+body .index {
   row-gap: 10px 20px;
   width: 350px;
   height: 250px;
@@ -27,16 +26,16 @@
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.body img {
+body img {
   width: 100%;
   height: 100%;
   transition: 0.2s;
   object-fit: cover;
 }
-.body img:hover {
+body img:hover {
   transform: scale(1.1);
 }
-.body footer {
+body footer {
   background-color: rgba(255, 255, 255, 0.7);
   margin-top: 20px;
   margin-bottom: 20px;
@@ -44,7 +43,7 @@
   text-align: center;
   justify-content: center;
 }
-.body footer .uPie {
+body footer .uPie {
   display: inline-block;
 }
 
@@ -82,37 +81,36 @@ header li a {
   color: black;
 }
 
-.main {
+main {
   background-color: #f1dfa0;
   border-radius: 30px;
   border: 1px #ebc643;
   margin-top: 20px;
   padding: 5px;
   text-align: center;
-  font-family: "Signika Negative", sans-serif;
   /* MAIN INDEX */
   /* Seccion Main Quienes Somos*/
-  /* Resolución para movil */
   /* Main Contacto */
   /* Seccion de productos en el Main*/
   /*MAIN TIENDAS*/
 }
-.main .tituloPrincipal {
+main .tituloPrincipal {
+  font-family: "Signika Negative", sans-serif;
   text-align: center;
   margin: 20px 0px;
 }
-.main .imgindex {
+main .imgindex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   border-radius: 1rem;
 }
-.main .grid-item:hover {
+main .grid-item:hover {
   filter: opacity(0.9);
   transform: scale(0.05);
 }
-.main .grid-Container {
+main .grid-Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -120,10 +118,10 @@ header li a {
   margin: 5rem;
   grid-template-areas: "pet pet" "producto tips";
 }
-.main .grid-Container .pet {
+main .grid-Container .pet {
   grid-area: pet;
 }
-.main .grid-Container .pet .pet p {
+main .grid-Container .pet .pet p {
   position: absolute;
   top: 50;
   left: 50%;
@@ -133,10 +131,10 @@ header li a {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
 }
-.main .grid-Container .producto {
+main .grid-Container .producto {
   grid-area: producto;
 }
-.main .grid-Container .producto .imgindex1 {
+main .grid-Container .producto .imgindex1 {
   display: block;
   flex-wrap: wrap;
   height: auto;
@@ -146,26 +144,15 @@ header li a {
   border-radius: 1rem;
   box-shadow: 7px 7px 13px #89501a;
 }
-.main .grid-Container .tips {
+main .grid-Container .tips {
   grid-area: tips;
 }
-.main .piePaginac {
+main .piePaginac {
   font-family: "Pacifico", cursive;
   text-align: center;
   font-size: 2rem;
 }
-@media only screen and (max-width: 765px) {
-  .main .contenedor {
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "texto1" "imagent1" "texto2" "imagent2" "texto3" "imagent3";
-  }
-}
-.main .contenedor {
+main .contenedor {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
@@ -176,7 +163,7 @@ header li a {
   grid-auto-flow: row;
   grid-template-areas: "texto1 imagent1" "imagent2 texto2" "texto3 imagent3";
 }
-.main .contenedor .texto1 {
+main .contenedor .texto1 {
   grid-area: texto1;
   display: flex;
   text-align: -webkit-left;
@@ -184,12 +171,12 @@ header li a {
   padding: 10px;
   margin-top: 30px;
 }
-.main .contenedor .imagent1 .img {
+main .contenedor .imagent1 .img {
   grid-area: imagent1;
   text-align: center;
   justify-content: center;
 }
-.main .contenedor .texto2 {
+main .contenedor .texto2 {
   grid-area: texto2;
   text-align: center;
   justify-content: center;
@@ -199,12 +186,12 @@ header li a {
   padding: 10px;
   margin-top: 30px;
 }
-.main .contenedor .imagent2 {
+main .contenedor .imagent2 {
   grid-area: imagent2;
   text-align: center;
   justify-content: center;
 }
-.main .contenedor .texto3 {
+main .contenedor .texto3 {
   grid-area: texto3;
   text-align: center;
   justify-content: center;
@@ -214,36 +201,36 @@ header li a {
   padding: 10px;
   margin-top: 30px;
 }
-.main .contenedor .imagent3 {
+main .contenedor .imagent3 {
   grid-area: imagent3;
   text-align: center;
   justify-content: center;
 }
-.main .contenedor .imagent1 img {
+main .contenedor .imagent1 img {
   border-radius: 30px;
 }
-.main .contenedor .imagent2 img {
+main .contenedor .imagent2 img {
   border-radius: 30px;
 }
-.main .contenedor .imagent3 img {
+main .contenedor .imagent3 img {
   border-radius: 30px;
 }
-.main .contenedor .texto1 p {
+main .contenedor .texto1 p {
   font-family: "Signika Negative", sans-serif;
   font-size: 1.3rem;
   text-align: justify;
 }
-.main .contenedor .texto2 p {
+main .contenedor .texto2 p {
   font-family: "Signika Negative", sans-serif;
   font-size: 1.3rem;
   text-align: justify;
 }
-.main .contenedor .texto3 p {
+main .contenedor .texto3 p {
   font-family: "Signika Negative", sans-serif;
   font-size: 1.3rem;
   text-align: justify;
 }
-.main .formulario {
+main .formulario {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px));
   grid: wrap;
@@ -252,7 +239,7 @@ header li a {
   padding: 20px 20px;
   grid-template-areas: "gridContacto";
 }
-.main .formulario .gridContacto {
+main .formulario .gridContacto {
   justify-content: center;
   text-align: center;
   grid-auto-flow: column;
@@ -265,25 +252,25 @@ header li a {
   font-family: "Signika Negative", sans-serif;
   grid-area: gridContacto;
 }
-.main .formulario .gridContacto .control {
+main .formulario .gridContacto .control {
   justify-content: center;
   text-align: start;
   padding: 0 20px;
 }
-.main .formulario .gridContacto .control .campos {
+main .formulario .gridContacto .control .campos {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 15px;
   margin-bottom: 10px;
 }
-.main .formulario .gridContacto .btnFormulario {
+main .formulario .gridContacto .btnFormulario {
   display: inline-flex;
   padding: 0px 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(240, 220, 222, 0.5);
 }
-.main .productos {
+main .productos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,25 +278,25 @@ header li a {
   background-color: #cd8484;
   border-radius: 20px;
 }
-.main .productos .card-body {
+main .productos .card-body {
   box-shadow: 0px 5px 10px 0px rgb(243, 155, 40);
 }
 @media (min-width: 746px) {
-  .main .productos .card {
+  main .productos .card {
     flex-direction: column;
     margin: 10px;
   }
 }
 @media (max-width: 745px) {
-  .main .productos .card {
+  main .productos .card {
     flex-direction: column;
     margin: 15px;
   }
 }
-.main .casaMatriz {
+main .casaMatriz {
   text-align: center;
 }
-.main .iframe {
+main iframe {
   margin: auto;
   border-radius: 20px;
   border-bottom: 20px solid black;

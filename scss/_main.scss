@@ -5,32 +5,84 @@ main {
     margin-top: 20px;
     padding: 5px;
     text-align: center;
+    
+
     .tituloPrincipal {
         font-family: 'Signika Negative', sans-serif;
         text-align: center;
         margin: 20px 0px;
     }
-        /* MAIN INDEX */
-    .imgindex {
+    
+    .grid-Container {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 1.5rem;
+        gap: 15px;
+    }
+    
+    .pet, .producto, .tips {
+        flex: 1;
+        min-width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+        max-width: 10%; /* Reducción del tamaño de las imágenes */
+    }
+    
+    .image-container {
+        position: relative;
         text-align: center;
-        border-radius: 1rem;
+        justify-content: center;
+        transition: transform 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .grid-item:hover {
-        filter: opacity(0.9);
-        transform: scale(0.05);
+    
+    .pet:hover .image-container,
+    .producto:hover .image-container,
+    .tips:hover .image-container {
+        transform: scale(0.98);
     }
-    .grid-Container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 20px;
-        margin: 5rem;
-        grid-template-areas: 
-        "pet pet" 
-        "producto tips";
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #2cbbc3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.9s;
+        transform: scale(0.96);
+        border-radius: 4rem;
+    }
+    
+    .overlay-content {
+        font-family: 'Pacifico', cursive;
+        font-size: 8rem;
+        padding: 15px;
+        border: 10px solid #CAE4EF;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .pet:hover .overlay,
+    .producto:hover .overlay,
+    .tips:hover .overlay {
+        opacity: 1;
+    }
+    
+    /**/
         .pet {
             grid-area: pet;
             .pet p {
@@ -46,21 +98,12 @@ main {
         }
         .producto {
             grid-area: producto;
-            .imgindex1 {
-                display: block;
-                flex-wrap: wrap;
-                height: auto;
-                width: 100%;
-                border-radius: 10px;
-                justify-content: center;
-                border-radius: 1rem;
-                box-shadow: 7px 7px 13px #89501a;
-            }
         }
+
         .tips {
             grid-area: tips;
         }
-    }
+
     .piePaginac {
         font-family: 'Pacifico', cursive;
         text-align: center;
@@ -148,7 +191,26 @@ main {
             text-align: justify;
         }
     }
+
     /* Main Contacto */
+    
+    @media only screen and (max-width:765px){
+        .contenedor{
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-gap: 1.5rem;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(6,auto);
+            grid-template-areas: 
+            "texto1"
+            "imagent1"
+            "texto2"
+            "imagent2"
+            "texto3"
+            "imagent3";
+            }
+        }
     .formulario {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px));
@@ -201,17 +263,17 @@ main {
         .card-body {
             box-shadow: 0px 5px 10px 0px rgb(243, 155, 40);
         }
-        @media (min-width: 746px) {
-            .card {
-                flex-direction: column;
-                margin: 10px;
-            }
+    }
+    @media (min-width: 746px) {
+        .card {
+            flex-direction: column;
+            margin: 10px;
         }
-        @media (max-width: 745px) {
-            .card {
-                flex-direction: column;
-                margin: 15px;
-            }
+    }
+    @media (max-width: 745px) {
+        .card {
+            flex-direction: column;
+            margin: 15px;
         }
     }
     /*MAIN TIENDAS*/

@@ -226,6 +226,12 @@ main {
             "texto1 imagent1"
             "imagent2 texto2"
             "texto3 imagent3";
+        .imgqs{
+            border-radius: 40px;
+            object-fit: cover;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
         .texto1 {
             grid-area: texto1;
             display: flex;
@@ -278,7 +284,7 @@ main {
             margin: 20px;
         }
     }
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: 950px) {
         .contenedor {
             height: auto;
             margin: auto;

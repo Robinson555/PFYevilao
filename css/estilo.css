@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1400px;
 }
 body .imgHome {
   width: 5rem;
@@ -186,6 +187,7 @@ main {
   padding: 5px;
   text-align: center;
   max-width: 1400px;
+  margin: 0 auto;
   /*  Seccion INDEX.html  */
   /* Seccion de tarjetas informativas de pagos, envio y vision de nuestra tienda */
   /* Seccion Main Quienes Somos*/
@@ -647,6 +649,8 @@ main .contenedorTips .accordion input[type=checkbox]:checked + .accordion-header
 
 html, body {
   overflow-x: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=estilo.css.map */

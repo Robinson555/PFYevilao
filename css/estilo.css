@@ -7,6 +7,7 @@
 
 body {
   font-family: "Pacifico", cursive;
+  overflow-x: hidden;
   line-height: 1.6;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,28 +16,94 @@ body .imgHome {
   width: 5rem;
   padding: 8px;
 }
-body .logo {
-  border: 3px solid black;
-  width: 200px;
-}
 body img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 40px;
 }
-body footer {
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 20px;
+body .piePaginac {
+  font-family: "Pacifico", cursive;
   text-align: center;
-  justify-content: center;
+  font-size: 2rem;
 }
-body footer .uPie {
+body .pie-pagina {
+  font-family: "Signika Negative", cursive;
+  width: 100%;
+  background-color: hsla(39, 66%, 84%, 0.7);
+  margin-top: 20px;
+}
+body .pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0;
+}
+body .pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .pie-pagina .grupo-1 .box figure .imgfoot {
+  width: 100px;
+}
+body .pie-pagina .grupo-1 .box figure h2 {
+  color: #070707;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+body .pie-pagina .grupo-1 .box figure p {
+  color: #020202;
+  margin-bottom: 10px;
+}
+body .pie-pagina .seccionesf a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #0d0d0d;
+  transition: all 300ms ease;
+}
+body .pie-pagina a:hover {
+  color: #fff;
+}
+body .pie-pagina .red-social a {
   display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #0d0d0d;
+  margin-right: 10px;
+  background-color: #d797bf;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 300ms ease;
+}
+body .pie-pagina a:hover {
+  color: #fff;
+}
+body .pie-pagina .grupo-2 {
+  background-color: #e9b0b9;
+  padding: 15px 10px;
+  text-align: center;
+  color: #070707;
+}
+body .pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  body .pie-pagina .grupo-1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 30px 0;
+    margin: 30px;
+  }
 }
 
-/* Mixin para Header */
 header {
   font-family: "Signika Negative", sans-serif;
   background-color: #e8bfc6;
@@ -50,147 +117,180 @@ header .fuentes {
   font-size: 1.3rem;
   text-transform: uppercase;
 }
-header .fuentes li a:hover {
-  background-color: #f6c483;
-  color: #fff;
-  border-radius: 20px;
-}
-header .piePaginac {
-  font-family: "Pacifico", cursive;
-  text-align: center;
-  font-size: 2rem;
-}
-header li {
+header .fuentes li {
   display: inline-block;
   margin: 0 20px;
 }
-header li a {
+header .fuentes li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
 }
-
-/*Estilo main texto p e imagenes*/
-.imagent1, .imagent2, .imagent3 {
-  font-family: "Signika Negative", sans-serif;
-  font-size: 1.3rem;
-  text-align: justify;
-}
-.imagent1 img, .imagent2 img, .imagent3 img {
-  border-radius: 30px;
-}
-
-.texto1, .texto2, .texto3 {
-  font-family: "Signika Negative", sans-serif;
-  font-size: 1.3rem;
-  text-align: justify;
-}
-.texto1 img, .texto2 img, .texto3 img {
-  border-radius: 30px;
-}
-
-/*Mixin para footer*/
-footer {
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-top: 20px;
-  margin-bottom: 20px;
+header .fuentes li a:hover {
+  background-color: #f6c483;
+  color: #fff;
   border-radius: 20px;
-  text-align: center;
-  justify-content: center;
 }
-footer .uPie {
-  display: inline-block;
+
+.inicioTips {
+  display: flex;
+  flex-direction: column;
+  font-family: Signika Negative;
+  background: linear-gradient(102deg, rgb(205, 119, 119) 31%, rgb(251, 234, 234) 76%);
+  color: rgb(41, 35, 36);
+  border-bottom: 16px solid rgb(244, 128, 128);
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.tituloPrincipal {
+  display: flex;
+  flex-direction: column;
+  font-family: pacifico;
+  background: linear-gradient(rgb(205, 119, 119) 46%, rgb(251, 234, 234) 76%);
+  color: rgb(41, 35, 36);
+  box-shadow: 0 0 20px rgba(198, 30, 30, 0.2);
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.textoInx {
+  text-shadow: 0 0 1rem rgba(147, 35, 56, 0.7);
+  font-size: 4rem;
 }
 
 main {
   background-color: #f1dfa0;
-  border-radius: 30px;
+  border-radius: 20px;
   border: 1px #ebc643;
   margin-top: 20px;
   padding: 5px;
   text-align: center;
+  max-width: 1400px;
+  /*  Seccion INDEX.html  */
+  /* Seccion de tarjetas informativas de pagos, envio y vision de nuestra tienda */
   /* Seccion Main Quienes Somos*/
   /* Seccion Main Contacto */
   /* Seccion Main productos */
-  /* Seccion Main de Tiendas*/
+  /* Seccion TIPS*/
 }
-main .grid-Container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem;
-  gap: 15px;
+main .text-overlay {
+  font-family: "Pacifico";
 }
-main .grid-Container .welcome-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+main .imgindex {
+  display: grid;
+  width: 850px;
+  grid-template-columns: 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-main .grid-Container .text-container {
-  text-align: center;
-  font-size: 10rem;
-  font-family: "Pacifico", cursive;
-}
-main .grid-Container .tituloPrincipal {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 4rem;
-  font-family: "Pacifico", cursive;
-}
-main .grid-Container h2 {
-  font-size: 1.8rem;
-}
-@media (max-width: 768px) {
-  main .grid-Container .tituloPrincipal {
-    font-size: 2rem;
-  }
-  main .grid-Container h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 480px) {
-  main .grid-Container .tituloPrincipal {
-    font-size: 1.8rem;
-  }
-  main .grid-Container h2 {
-    font-size: 1.2rem;
-  }
-}
-main .pet, main .producto, main .tips {
-  flex: 1;
+main .imgindex .welcome-section {
   min-width: 100%;
   position: relative;
   overflow: hidden;
   margin-bottom: 15px;
   max-width: 10%;
 }
-main .image-container {
+main .imgindex .welcome-section .tituloPrincipal {
+  margin-bottom: 1rem;
+  font-family: "Pacifico", cursive;
+}
+main .imgindex .welcome-section h2 {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+}
+@media only screen and (max-width: 788px) {
+  main .textoInx {
+    font-size: 3rem;
+  }
+  main .textoInxh2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 590px) {
+  main .textoInx {
+    font-size: 1.6rem;
+  }
+  main .textoInxh2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 905px) {
+  main .imgindex {
+    display: flex;
+    width: 70%;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+main .contindex {
+  display: grid;
+  width: 850px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+main .contindex .pet {
+  grid-column: 1/3;
+}
+main .contindex .pet .image-container {
   position: relative;
-  text-align: center;
-  justify-content: center;
-  transition: transform 0.3s;
   width: 100%;
-  height: 100%;
-  border-radius: 4rem;
+  height: auto;
+  max-width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
-main .pet:hover .image-container,
-main .producto:hover .image-container,
-main .tips:hover .image-container {
+main .contindex .pet p {
+  position: absolute;
+  top: 50;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(87, 44, 44, 0.8);
+  border-radius: 5px;
+}
+main .contindex .pet,
+main .contindex .producto,
+main .contindex .tips {
+  flex: 1;
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 4rem;
+}
+main .contindex .pet:hover .image-container,
+main .contindex .producto:hover .image-container,
+main .contindex .tips:hover .image-container {
   transform: scale(0.98);
+  border-radius: 4rem;
 }
-main .overlay {
+main .contindex .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  color: #2cbbc3;
+  color: rgb(69, 202, 238);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,39 +300,92 @@ main .overlay {
   transform: scale(0.96);
   border-radius: 4rem;
 }
-main .overlay-content {
+main .contindex .overlay-content {
   font-family: "Pacifico", cursive;
-  font-size: 8rem;
-  padding: 15px;
-  border: 10px solid #CAE4EF;
-  border-radius: 5px;
-  text-align: center;
+  font-size: 3.5rem;
+  padding: 10px;
+  border: 8px solid #c7e9f8;
+  border-radius: 35px;
 }
-main .pet:hover .overlay,
-main .producto:hover .overlay,
-main .tips:hover .overlay {
+main .contindex .pet:hover .overlay,
+main .contindex .producto:hover .overlay,
+main .contindex .tips:hover .overlay {
   opacity: 1;
 }
-main .pet {
-  grid-area: pet;
+@media (max-width: 768px) {
+  main .contindex .overlay-content {
+    font-size: 3rem;
+    padding: 8px;
+    border: 6px solid #cae4ef;
+  }
 }
-main .pet .pet p {
-  position: absolute;
-  top: 50;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
+@media (max-width: 480px) {
+  main .contindex .overlay-content {
+    font-size: 2.4rem;
+    padding: 6px;
+    border: 4px solid #cae4ef;
+  }
 }
-main .producto {
-  grid-area: producto;
+@media (max-width: 905px) {
+  main .contindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+  }
 }
-main .tips {
-  grid-area: tips;
+main .cardEnvio {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black;
+  font-weight: 350;
+  width: 100%;
+  margin: 45px 0px 50px 0px;
 }
-main .piePaginac {
+main .cardEnvio .cardtextoenv {
+  background-color: #fff;
+  height: 25rem;
+  width: 15rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 2rem;
+  margin-bottom: 50px;
+}
+main .cardEnvio .cardtextoenv img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+}
+main .cardEnvio .cardtextoenv .textocardenvio {
+  font-family: "Signika Negative";
+  font-weight: 150px;
+  font-size: 1.875rem;
+  color: #331c08;
+  width: 100%;
+}
+main .cardEnvio .cardtextoenv p {
+  margin: 0 auto;
+  text-align: center;
+}
+main .textoFinal {
+  display: flex;
+  flex-direction: column;
+  font-family: "Signika Negative";
+  background: linear-gradient(102deg, rgb(222, 158, 158) 31%, rgb(229, 218, 204) 76%);
+  color: rgb(112, 4, 15);
+  border-bottom: 2px solid rgb(246, 159, 88);
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: left;
+}
+main .textoFinal .piePaginac {
   font-family: "Pacifico", cursive;
   text-align: center;
   font-size: 2rem;
@@ -260,10 +413,11 @@ main .contenedor .texto1 {
 main .contenedor .texto1 h4 {
   font-size: 2rem;
 }
-main .contenedor .imagent1 .img {
+main .contenedor .imagent1 {
   grid-area: imagent1;
   text-align: center;
   justify-content: center;
+  margin: 20px;
 }
 main .contenedor .texto2 {
   grid-area: texto2;
@@ -273,16 +427,13 @@ main .contenedor .texto2 {
   flex-direction: column;
   text-align: -webkit-left;
   justify-content: center;
-  padding: 10px;
-  margin-top: 30px;
-}
-main .contenedor .texto2 h4 {
-  font-size: 2rem;
+  margin: 20px;
 }
 main .contenedor .imagent2 {
   grid-area: imagent2;
   text-align: center;
   justify-content: center;
+  margin: 20px;
 }
 main .contenedor .texto3 {
   grid-area: texto3;
@@ -290,18 +441,16 @@ main .contenedor .texto3 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  text-align: -webkit-right;
+  text-align: justify;
   justify-content: center;
   padding: 10px;
-  margin-top: 30px;
-}
-main .contenedor .texto3 h4 {
-  font-size: 2rem;
+  margin: 20px;
 }
 main .contenedor .imagent3 {
   grid-area: imagent3;
   text-align: center;
   justify-content: center;
+  margin: 20px;
 }
 @media only screen and (max-width: 765px) {
   main .contenedor {
@@ -314,101 +463,180 @@ main .contenedor .imagent3 {
     grid-template-areas: "texto1" "imagent1" "texto2" "imagent2" "texto3" "imagent3";
   }
 }
-main .formulario {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px));
-  grid: wrap;
-  grid-auto-flow: row;
-  gap: 10px;
-  padding: 20px 20px;
-  grid-template-areas: "gridContacto";
+main .tituloContacto {
+  font-family: "pacifico";
 }
-main .formulario .gridContacto {
-  justify-content: center;
-  text-align: center;
-  grid-auto-flow: column;
+main .formularioPadre {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 10px;
+  background-color: #f1dfa0;
+  border-radius: 30px;
+  gap: 20px;
+  padding: 20px;
+  border: 1px #ebc643;
+}
+main .formularioPadre .formularioHijo {
+  height: 500px;
+  flex-basis: 50%;
   border-width: #f1dfa0;
   border-radius: 30px;
   border: solid 3px gray;
-  padding: 10px;
   box-shadow: 0px 0px 10px rgba(133, 82, 93, 0.5);
   background-color: rgba(161, 131, 85, 0.7);
-  font-family: "Signika Negative", sans-serif;
-  grid-area: gridContacto;
 }
-main .formulario .gridContacto .control {
+main .formularioPadre .formularioHijo .contenedordatos {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+main .formularioPadre .formularioHijo .contenedordatos .control {
   justify-content: center;
   text-align: start;
   padding: 0 20px;
 }
-main .formulario .gridContacto .control .campos {
+main .formularioPadre .formularioHijo .contenedordatos .control .campos {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-top: 5px;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-main .formulario .gridContacto .btnFormulario {
-  display: inline-flex;
-  padding: 0px 20px;
+main .formularioPadre .formularioHijo .contenedordatos .control .btnFormulario {
+  width: 200px;
+  background-color: #ecab34;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(240, 220, 222, 0.5);
+  box-shadow: 0px 0px 10px rgba(245, 47, 212, 0.5);
 }
-main .productos {
+main .formularioPadre .formularioHija {
+  flex-basis: 50%;
+}
+main .formularioPadre .formularioHija .mapa {
+  height: 500px;
+  width: 100%;
+  border-radius: 30px;
+}
+@media (max-width: 850px) {
+  main .formularioPadre {
+    flex-direction: column;
+  }
+  main .formularioHijo,
+  main .formularioHija {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
+main .inicioProducto {
   display: flex;
   flex-direction: column;
+  font-family: "Signika Negative";
+  background: linear-gradient(102deg, rgb(243, 183, 88) 31%, rgb(238, 210, 178) 76%);
+  color: rgb(107, 7, 17);
+  border-bottom: 16px solid rgb(238, 126, 34);
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: left;
+}
+main .container {
+  background-color: #f1dfa0;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  border: 1px #ebc643;
+  margin-top: 20px;
+  max-width: 1400px;
   align-items: center;
-  padding: 10px;
-  background-color: #cd8484;
+}
+main .container .articulo {
+  font-family: "Signika Negative";
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 1px solid #c4d4e0;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+}
+main .container .articulo .imagenproducto {
+  object-fit: cover;
+  border-radius: 8px;
+}
+main .container .articulo .articulo-contenido {
+  font-family: "Signika Negative";
+  box-shadow: 0px 0px 10px grey;
+  text-align: justify;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1 rem;
+}
+main .container .articulo .articulo-contenido .articulo-boton {
+  font-family: "Pacifico";
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #ecab34;
+}
+main .contenedorTips {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+main .contenedorTips .accordion {
+  border: 1px solid #ccc;
+  margin: 20px;
+  overflow: hidden;
   border-radius: 20px;
 }
-main .productos .card-body {
-  box-shadow: 0px 5px 10px 0px rgb(243, 155, 40);
-}
-@media (min-width: 746px) {
-  main .card {
-    flex-direction: column;
-    margin: 10px;
-  }
-}
-@media (max-width: 745px) {
-  main .card {
-    flex-direction: column;
-    margin: 15px;
-  }
-}
-main .tienda-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-}
-main .texto-container {
-  flex: 1;
-}
-main .map-container {
-  flex: 1;
-  margin-left: 2rem;
-}
-main .map-container iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 10rem;
-}
-@media (max-width: 815px) {
-  main .tienda-container {
+@media screen and (min-width: 850px) {
+  main .contenedorTips .accordion .accordion {
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
-  main iframe {
-    margin-left: 0;
-    margin-top: 1rem;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    border-radius: 1.5rem;
+  main .contenedorTips .accordion .accordion-header {
+    font-size: 18px;
   }
+}
+main .contenedorTips .accordion input[type=checkbox] {
+  display: none;
+}
+main .contenedorTips .accordion-header {
+  cursor: pointer;
+  padding: 20px;
+  font-family: "Signika Negative", cursive;
+  background-color: #fcaa25;
+  display: block;
+  box-shadow: 0px 0px 30px rgb(25, 12, 12);
+}
+main .contenedorTips .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  padding: 0 20px;
+  background-color: #fae5e5;
+  transition: max-height 0.2s ease-out;
+  border-top: 1px solid #ee3838;
+}
+main .contenedorTips .accordion-content h5 {
+  font-size: 3rem;
+  font-family: "Signika Negative", cursive;
+}
+main .contenedorTips .accordion input[type=checkbox]:checked + .accordion-header + .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.35s ease-in;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=estilo.css.map */

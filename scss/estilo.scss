@@ -3,5 +3,10 @@
 @import "general";
 @import "variables";
 @import "body";
+@import "header";
 @import "mixin";
 @import "main";
+
+ html, body{
+    overflow-x: hidden;
+ }

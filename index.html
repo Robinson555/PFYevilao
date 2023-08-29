@@ -3,34 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pet Friend Shop</title>
-        <meta name="description" content="Bienvenido Pet Friends!!!
-        Variedad de productos para tu mascota" />
+        <title>PET FRIENDS SHOP! - HOME</title>
+        <meta name="description" content="Bienvenido Pet Friends!!! Variedad de productos para tu mascota Productos Tips Contacto" />
         <!-- CSS -->
         <link rel="stylesheet" href="css/estilo.css" />
         <!-- FAVICON -->
         <link rel="shortcut icon" href="img/Logo_nav.png" type="image/x-icon" alt="Imagen Favicon" />
         <!-- Boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-        <!-- GOOGLE FONTS, SIGNIKA NEGATIVE-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
-        <!-- GOOGLE FONTS, PACIFICO -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <!-- PACIFICO, SIGNIKA NEGATIVE-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&family=Pacifico&display=swap" rel="stylesheet" />
         <!-- AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <!-- Imagen de Fondo -->
     <body style="background-image: url(img/imagen_background.avif)">
         <header>
-             <!-- nav boostrap -->
+            <!-- nav boostrap -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img class="imgHome" src="img/Logo_nav.png" alt="Logonav">
-                    </a>
+                    <a class="navbar-brand" href="index.html"><img class="imgHome" src="img/Logo_nav.png" alt="Logo barra de Navegación" /> </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,7 +36,7 @@
                                 <a class="nav-link" href="html/productos.html"> Productos </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="html/tiendas.html"> Tiendas </a>
+                                <a class="nav-link" href="html/tips.html"> Tips </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="html/contacto.html"> Contacto </a>
@@ -54,66 +47,126 @@
             </nav>
         </header>
         <main>
-        <section class="grid-Container">
-            <section class="welcome-section">
-                <div class="image-indexhome" >
-                    <img class="imgindex" data-aos="zoom-out" src="img/bannerprincipal.png" alt="imagen de Bienvenida">
-                    <div class="text-overlay">
-                        <h1 class="tituloPrincipal" data-aos="fade-down"
-                               data-aos-easing="linear"
-                            data-aos-duration="1500">Bienvenido Pet Friends!!!</h1>
-                        <h2 data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"> Variedad de productos para tu mascota </h2>
+            <section>
+                <img class="imgindex" data-aos="zoom-out" src="img/bannerprincipal.png" alt="imagen de Bienvenida Tienda en caricatura" />
+                <article class="welcome-section">
+                    <div class="image-indexhome">
+                        <div class="text-overlay">
+                            <aside class="tituloPrincipal">
+                                <h1 class="textoInx" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Bienvenido Pet Friends!!!</h1>
+                                <h2 class="textoInxh2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Variedad de productos para tu mascota</h2>
+                            </aside>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="contindex">
+                <div class="pet" data-aos="zoom-out">
+                    <a href="html/productos.html">
+                        <aside>
+                            <img class="image-container" src="img/productos.avif" alt="producto" />
+                        </aside>
+                        <aside class="overlay">
+                            <div class="overlay-content">Productos</div>
+                        </aside>
+                    </a>
+                </div>
+                <div class="producto" data-aos="zoom-out">
+                    <a href="html/tips.html">
+                        <aside>
+                            <img class="image-container" src="img/tips2.avif" alt="Tips" />
+                        </aside>
+                        <aside class="overlay">
+                            <div class="overlay-content">Tips</div>
+                        </aside>
+                    </a>
+                </div>
+                <div class="tips" data-aos="zoom-out">
+                    <a href="html/quienessomos.html">
+                        <aside>
+                            <img class="image-container" src="img/quienessomos.avif" alt="Quienes Somos" />
+                        </aside>
+                        <aside class="overlay">
+                            <div class="overlay-content">Quienes Somos</div>
+                        </aside>
+                    </a>
+                </div>
+            </div>
+            <section class="cardEnvio">
+                <div class="cardtextoenv" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <img src="img/camionreparto.png" alt="icono de camion de reparto" />
+                    <h4 class="textocardenvio">
+                        Envio
+                        <span style="display: block"> gratis </span>
+                    </h4>
+                    <p>Si realizas compras por</p>
+                    <p>sobre $100.000 pesos</p>
+                    <p>el envio es gratis,</p>
+                    <p>a lo largo del pais</p>
+                </div>
+                <div class="cardtextoenv" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <img src="img/garantizar.png" alt="icono de garantia de calidad en productos" />
+                    <h4 class="textocardenvio">
+                        Garantia de Calidad
+                        <span style="display: block"> </span>
+                    </h4>
+                    <p>Contamos con gran variedad</p>
+                    <p>de productos</p>
+                    <p>de uy buena calidad y nutrientes</p>
+                </div>
+                <div class="cardtextoenv" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <img src="img/metodopago.png" alt="icono de metodo de pago de la tienda" />
+                    <h4 class="textocardenvio">
+                        Facilidades
+                        <span style="display: block"> de Pagos </span>
+                    </h4>
+                    <p>se Aceptan Pagos con tarjeta</p>
+                    <p>pagos con efectivo</p>
+                    <p>y pagos con transferencia</p>
+                </div>
+            </section>
+            <section class="textoFinal">
+                <h4 class="piePaginac" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Al servicio de tu familia, al servicio de tu mascota</h4>
+            </section>
+        </main>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="../index.html"> <img class="imgfoot" src="../img/Logo_nav.png" alt="Logo barra de Navegación"" /> </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>CONTACTO</h2>
+                    <p>Dirección: Av. Macul 3579, Macul, Región Metropolitana</p>
+                    <p>Teléfono: +56 9 54804869</p>
+                    <p>Email: petfriends@gmail.com</p>
+                </div>
+                <div class="box">
+                    <h2>SECCIONES</h2>
+                    <div class="seccionesf">
+                        <a href="../index.html">Home</a>
+                        <a href="html/quienessomos.html">Quienes Somos</a>
+                        <a href="html/productos.html">Productos</a>
+                        <a href="html/contacto.html">Contacto</a>
+                        <a href="html/tips.html">Tips</a>
                     </div>
                 </div>
-                <a href="html/quienessomos.html" class="image-h"></a>
-            </section>
-            <div class="pet">
-                <a href="html/productos.html">
-                    <div class="image-container">
-                        <img class="image-container" data-aos="fade-right" src="img/productosycomida.avif" alt="producto">
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                        <a href="https://wa.me/56990242287/" class="fa fa-whatsapp"></a>
                     </div>
-                    <div class="overlay">
-                        <div class="overlay-content" data-aos="zoom-in"> Productos </div>
-                    </div>
-                   </a>
-             </div>
-            <div class="producto">
-                <a href="html/tiendas.html">
-                    <div class="image-container">
-                        <img class="image-container" data-aos="fade-left" src="img/cuidado.png" alt="Tiendas">
-                    </div>                        
-                    <div class="overlay">
-                           <div class="overlay-content" data-aos="zoom-in"> Tiendas </div>
-                    </div>
-                </a>
+                </div>
             </div>
-            <div class="tips">
-                <a href="html/contacto.html">
-                    <div class="image-container">
-                        <img class="image-container" src="imgindex/index3.jpg" alt="contacto">
-                    </div>
-                    <div class="overlay">
-                        <div class="overlay-content" data-aos="zoom-in"> Contacto </div>
-                    </div>
-                </a>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b> Robinson Yevilao</b> - Todos los Derechos Reservados.</small>
             </div>
-        </section>
-                <h2 class="piePaginac"> Al servicio de tu familia, al servicio de tu mascota </h2>
-        </main>
-        <footer>
-            <h4 data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom">Pet friend shop - Todos los derechos reservados - Robinson Yevilao</h4>
-            <ul class="uPie" data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom">
-                <span>
-                    <a href="https://www.instagram.com/"> Instagram </a>
-                </span>
-                <span>
-                    <a href="https://www.facebook.com/"> Facebook </a>
-                </span>
-            </ul>
         </footer>
+        <!-- Iconos -->
+        <script src="https://kit.fontawesome.com/f0b4cabd5f.js" crossorigin="anonymous"></script>
         <!-- JSBS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <!-- JSAOS -->
@@ -121,6 +174,6 @@
         <!-- inicializador de animación -->
         <script>
             AOS.init();
-          </script>
+        </script>
     </body>
 </html>

@@ -1,73 +1,51 @@
-/* Mixin para Header */
-@mixin header-mixin{
-    font-family: 'Signika Negative', sans-serif;
-    background-color: $color-backgroundnav;
-    border-radius: 30px ;
-    margin-top: 20px;
-    border: 1px solid #da8190;
-    .fuentes{
-        font-family: 'Signika Negative', sans-serif;
-        padding-left: 2rem;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        li a:hover{
-            background-color: #f6c483;
-            color: #fff;
-            border-radius: 20px;
-        }
-    }
-    .piePaginac{
-        font-family: 'Pacifico', cursive;
-        text-align: center;
-        font-size: 2rem;
-    }
-    li{
-        display: inline-block;
-        margin: 0 20px;
-    }
-    li a{
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: black;
-    }
-}
-header {
-    @include header-mixin;
-}
-/*Estilo main texto p e imagenes*/
-@mixin custom-styles {
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 1.3rem;
-    text-align: justify;
-
-    img {
-        border-radius: 30px;
-    }
-}
-.imagent1, .imagent2, .imagent3 {
-    @include custom-styles;
-}
-.texto1, .texto2, .texto3 {
-    @include custom-styles;
-}
-
-/*Mixin para footer*/
-@mixin footer{
-    background-color: rgba(255,255,255,0.7);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    text-align: center;
+@mixin tituloPrimario($backgroundcolor,$color,$botonborder){
+    display: flex;
+    flex-direction: column;
+    font-family: Signika Negative;
+    background: $backgroundcolor;
+    color: $color;
+    border-bottom: $botonborder;
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: left;
+    align-items: center;
     justify-content: center;
-    .uPie{
-        display: inline-block ;
-    }
-}
-footer{
-    @include footer;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
 }
 
+@mixin textoinicio(){
+    text-shadow: 0 0 1rem rgba(147, 35, 56, 0.7);
+    font-size: 4rem;
+}
 
+@mixin inicioTipos {
+    display: flex;
+    flex-direction: column;
+    font-family: pacifico;
+    background: linear-gradient( rgb(205, 119, 119) 46%, rgb(251, 234, 234) 76%);
+    color: rgb(41, 35, 36);
+    box-shadow: 0 0 20px rgba(198, 30, 30, 0.2);
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+} 
+.inicioTips {
+    @include tituloPrimario(linear-gradient(102deg, rgb(205, 119, 119) 31%, rgb(251, 234, 234) 76%),rgb(41, 35, 36),16px solid rgb(244, 128, 128))
+}
 
+.tituloPrincipal{
+    @include inicioTipos()
+}
 
+.textoInx {
+    @include textoinicio()
+}

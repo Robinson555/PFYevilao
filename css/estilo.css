@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body .imgHome {
   width: 5rem;
@@ -126,10 +127,9 @@ header .fuentes li {
   margin: 0 20px;
 }
 header .fuentes li a {
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: rgb(75, 74, 74);
 }
 header .fuentes li a:hover {
   background-color: #f6c483;
